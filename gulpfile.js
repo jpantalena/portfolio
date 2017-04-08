@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 gulp.task('default', ['watch']);
 
-gulp.task('server', ['serve', 'watch']);
+gulp.task('server', ['watch', 'serve']);
 
 gulp.task('build-css', function () {
     return gulp.src('assets/sass/*.scss')
@@ -20,7 +20,7 @@ gulp.task('build-css', function () {
 
 // Default task
 gulp.task('watch', function () {
-    gulp.watch('assets/less/**/*.scss', ['build-css']);
+    gulp.watch('assets/sass/**/*.scss', ['build-css']);
 });
 
 // Folder "/" serving at http://localhost:8888

@@ -1,5 +1,4 @@
 @import "reset";
-@import "materialize";
 
 $dark-grey: #333;
 $white: #FFF;
@@ -28,4 +27,8 @@ footer {
   background-color: $dark-grey;
   color: $white;
   height: 45px;
+}
+
+#my_name {
+  font-size: 3em;
 }
