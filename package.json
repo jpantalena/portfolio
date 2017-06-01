@@ -1,13 +1,12 @@
 {
   "name": "portfolio_site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Jack Pantalena Web Development Portfolio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jack Pantalena",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -19,6 +18,9 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^5.0.0",
+    "jquery": "^3.2.1",
     "semantic-ui": "^2.2.10"
   }
 }

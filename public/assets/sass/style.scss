@@ -2,17 +2,22 @@
 
 $dark-grey: #333;
 $white: #FFF;
+$blue: #9ED1DE;
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700');
 
+* {
+  font-family: 'Merriweather';
+}
+
 body {
-  font-family: Merriweather;
+  background-color: $blue;
 }
 
 header {
   background-color: $dark-grey;
   color: $white;
-  height: 45px;
+  height: 42px;
   padding: 1rem;
   font-weight: 300;
 }
@@ -31,4 +36,19 @@ footer {
 
 #my_name {
   font-size: 3em;
+  font-family: 'Merriweather';
+}
+
+.container > .developer_header, .container > .top_info {
+  font-family: 'Merriweather';
+}
+
+.portfolio_piece_header {
+  font-family: 'Lato';
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.portfolio_piece_container {
+  background-color: rgba(255, 255, 255, 0.2);
 }
