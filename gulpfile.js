@@ -9,7 +9,9 @@ var gulp = require('gulp'),
         }
     });
 
-gulp.task('default', ['clean', 'build-css', 'watch', 'connect']);
+// Default task
+
+gulp.task('default', ['clean', 'build-css', 'build-fonts', 'watch', 'connect']);
 
 gulp.task('server', ['watch', 'serve']);
 
@@ -19,6 +21,11 @@ gulp.task('build-css', function () {
         .pipe(plugins.cssmin())
         .pipe(gulp.dest('./public/build')).on('error', gutil.log);
 });
+
+gulp.task('build-fonts', function () {
+  return gulp.src(['./public/assets/fonts/Poiret_One/*', './public/assets/fonts/Montserrat/*'])
+    .pipe(gulp.dest('./public/build/fonts')).on('error', gutil.log);
+})
 
 gulp.task('clean', function() {
     gulp.src('./public/build/*')
@@ -33,7 +40,7 @@ gulp.task('connect', () => {
   });
 });
 
-// Default task
+
 gulp.task('watch', function () {
     gulp.watch('./public/assets/sass/*.scss', ['build-css']);
 });
