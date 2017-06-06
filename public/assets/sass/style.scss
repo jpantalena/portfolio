@@ -1,11 +1,32 @@
 @import "reset";
 @import "materialize";
 
+$grey: #777;
 $dark-grey: #333;
 $white: #FFF;
-$blue: #9ED1DE;
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700');
+$base: #9ED1DB;
+$blue: #5B7CB4;
+$purple: #9086E8;
+$teal: #A2F2D8;
+$lightGreen: #9CE8A9;
+
+$darkBlue: #324974;
+
+@font-face {
+  font-family: 'Poiret One';
+  src: url('fonts/PoiretOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url('fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Extra Bold';
+  src: url('fonts/Montserrat-ExtraBold.ttf');
+}
 
 // helpers
 
@@ -29,28 +50,112 @@ $blue: #9ED1DE;
   align-items: center;
 }
 
+.flex_vCenter_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 * {
   font-family: 'Merriweather';
 }
 
 body {
-  background-color: $white;
+  background-color: $base;
 }
 
 nav {
   height: 80px;
   position: fixed;
-  background-color: $dark-grey;
+  background-color: $white;
   width: 100%;
 }
 
-.top_left_logo {
-  color: $white;
+.top_left_name {
+  color: $dark-grey;
   font-size: 2em;
   display: inline-block;
   padding-left: 0.5em;
+  font-family: 'Poiret One', cursive;
+}
+
+.top_left_logo_svg_container, .top_left_logo_svg {
+  height: 45px;
+}
+
+.top_left_logo_svg {
+  padding-left: 1em;
+}
+
+.nav_link {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 1.1em;
+  margin-right: 1em;
+  height: 78px;
+  border-bottom: 2px solid $white;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+  color: $dark-grey;
+}
+
+.nav_link:hover {
+  border-bottom: 2px solid $blue;
+  cursor: pointer;
+  color: $grey
 }
 
 .first_row {
-  padding-top: 80px;
+  padding-top: 120px;
+}
+
+.big_name {
+  font-family: 'Montserrat Extra Bold', sans-serif;
+  font-size: 6em;
+  color: $darkBlue;
+}
+
+.big_bottom {
+  border-bottom: 10px solid $darkBlue;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.big_name_sub {
+  font-size: 1.4em;
+  font-family: 'Montserrat Light', sans-serif;
+  color: $darkBlue;
+  display: inline-block;
+}
+
+.sub_text_container {
+  padding-top: 0.8em;
+  padding-bottom: 3em;
+}
+
+.icon_sub {
+  color: $darkBlue;
+  padding-left: 0.5em;
+}
+
+.box1, .box2, .box3 {
+  height: 250px;
+}
+
+.box1 {
+  background-color: $purple;
+}
+
+.box2 {
+  background-color: $teal;
+}
+
+.box3 {
+  background-color: $lightGreen;
+}
+
+.box_text {
+  font-size: 1em;
+  font-family: 'Montserrat Light', sans-serif;
 }
