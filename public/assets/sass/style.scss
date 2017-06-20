@@ -103,6 +103,7 @@ nav {
   box-sizing: border-box;
   transition: all 0.4s ease-in-out;
   color: $dark-grey;
+  text-decoration: none;
 }
 
 .nav_link:hover {
@@ -148,9 +149,6 @@ nav {
   height: 100px;
   padding: 10px;
   transition: 0.5s;
-  // display: flex;
-  // align-items: center;
-  cursor: pointer;
 }
 
 .box1 {
@@ -168,9 +166,12 @@ nav {
 .box_text {
   color: $darkBlue;
   font-size: 1.2em;
-  padding-left: 0.75rem;
-  padding-top: 1rem;
+  margin-left: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   font-family: 'Montserrat Light', sans-serif;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .down_icon {
@@ -180,7 +181,9 @@ nav {
 }
 
 .hidden_content {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
   transition: 2s;
 }
 
@@ -190,7 +193,11 @@ nav {
   font-size: 1.1em;
   padding: 0.5em;
   font-family: 'Montserrat Light', sans-serif;
-  transition: 2s;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact_link:hover {
+  color: $dark-grey;
 }
 
 .contact_icon {
