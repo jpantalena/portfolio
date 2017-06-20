@@ -56,6 +56,11 @@ $darkBlue: #324974;
   justify-content: space-between;
 }
 
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   font-family: 'Merriweather';
 }
@@ -143,8 +148,8 @@ nav {
   height: 100px;
   padding: 10px;
   transition: 0.5s;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   cursor: pointer;
 }
 
@@ -164,5 +169,30 @@ nav {
   color: $darkBlue;
   font-size: 1.2em;
   padding-left: 0.75rem;
+  padding-top: 1rem;
   font-family: 'Montserrat Light', sans-serif;
+}
+
+.down_icon {
+  font-size: 1.5em;
+  padding-left: 0.3rem;
+  padding-bottom: 0.1rem;
+}
+
+.hidden_content {
+  display: none;
+  transition: 2s;
+}
+
+.contact_link {
+  text-decoration: none;
+  color: $darkBlue;
+  font-size: 1.1em;
+  padding: 0.5em;
+  font-family: 'Montserrat Light', sans-serif;
+  transition: 2s;
+}
+
+.contact_icon {
+  margin-right: 0.5em;
 }
