@@ -140,7 +140,12 @@ nav {
 }
 
 .box1, .box2, .box3 {
-  height: 250px;
+  height: 100px;
+  padding: 10px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .box1 {
@@ -156,6 +161,8 @@ nav {
 }
 
 .box_text {
-  font-size: 1em;
+  color: $darkBlue;
+  font-size: 1.2em;
+  padding-left: 0.75rem;
   font-family: 'Montserrat Light', sans-serif;
 }
