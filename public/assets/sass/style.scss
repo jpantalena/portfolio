@@ -203,3 +203,25 @@ nav {
 .contact_icon {
   margin-right: 0.5em;
 }
+
+.project_img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.project_title {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 1.6em;
+  color: $darkBlue;
+  margin-bottom: 1em;
+}
+
+.project_desc {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 1.1em;
+  color: $darkBlue;
+}
+
+.buffer {
+  margin-bottom: 1em;
+}
