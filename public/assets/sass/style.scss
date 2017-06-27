@@ -61,6 +61,11 @@ $darkBlue: #324974;
   flex-direction: column;
 }
 
+.relative {
+  position: relative;
+}
+
+
 * {
   font-family: 'Merriweather';
 }
@@ -74,6 +79,7 @@ nav {
   position: fixed;
   background-color: $white;
   width: 100%;
+  z-index: 100;
 }
 
 .top_left_name {
@@ -187,6 +193,17 @@ nav {
   transition: 2s;
 }
 
+.hidden_content_project {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  transition: 2s;
+  position: absolute;
+  top: 50px;
+  width: 90%;
+  padding: 20px;
+}
+
 .contact_link {
   text-decoration: none;
   color: $darkBlue;
@@ -207,6 +224,8 @@ nav {
 .project_img {
   max-width: 100%;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 
 .project_title {
@@ -220,6 +239,7 @@ nav {
   font-family: 'Montserrat Light', sans-serif;
   font-size: 1.1em;
   color: $darkBlue;
+  margin-bottom: 1em;
 }
 
 .buffer {
