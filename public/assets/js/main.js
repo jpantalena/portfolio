@@ -15,5 +15,14 @@ $(document).ready(() => {
     $(img).attr('style', 'opacity: 0.2');
   })
 
+  $(".close_icon").click(function() {
+    let icon = $(this);
+    let parent = $(icon).parents()[0];
+    let gparent = $(parent).parents()[0];
+    $(gparent).attr('style', 'visibility: hidden; opacity: 0;');
+    let img = $(gparent).prev()[0];
+    $(img).attr('style', 'opacity: 1');
+  })
+
 
 })
