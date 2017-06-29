@@ -199,7 +199,7 @@ nav {
   transition: visibility 0s, opacity 0.5s linear;
   transition: 2s;
   position: absolute;
-  top: 50px;
+  top: 10px;
   width: 90%;
   padding: 20px;
 }
@@ -221,11 +221,21 @@ nav {
   margin-right: 0.5em;
 }
 
+.close_icon {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
 .project_img {
   max-width: 100%;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+}
+
+.close_icon_container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .project_title {
